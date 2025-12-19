@@ -198,16 +198,10 @@ async def handler(reader: StreamReader, writer: StreamWriter) -> None:
         response_body_json_str = json.dumps(response_body)
         response_body_json_bytes = response_body_json_str.encode(ENCODING)
 
-        response = (
-            f"HTTP/1.1 {HTTPStatusCode.HTTP_200_OK}\r\n"
-            "content-type: text/plain\r\n"
-            f"content-length: {len(response_body_json_bytes)}\r\n"
-            "\r\n"
-        )
         await send_response(
             writer,
             HTTPStatusCode.HTTP_200_OK,
-            response.encode(ENCODING) + response_body_json_bytes,
+            response_body_json_bytes,
         )
     except asyncio.IncompleteReadError:
         raise HTTPError(http_status_code=HTTPStatusCode.HTTP_413_ENTITY_TOO_LARGE)
