@@ -1,0 +1,7 @@
+[project]
+name = "http-from-scratch"
+version = "0.1.0"
+description = "Trying to implement http/1.1 from scratch"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
