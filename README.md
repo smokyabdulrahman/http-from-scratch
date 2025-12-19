@@ -6,12 +6,12 @@ After I get to implement a good chunck of the things that I want to do (list is 
 
 
 # What do I want to implement?
-[ ] Echo HTTP server that adheres to RFC 9112 (HTTP/1.1)
-[ ] Simple Reverse proxy
-[ ] Optimize the amount of requests the server can handle.
+- [ ] Echo HTTP server that adheres to RFC 9112 (HTTP/1.1)
+- [ ] Simple Reverse proxy
+- [ ] Optimize the amount of requests the server can handle.
 
 
 # Resources
-[RFC 9112](https://www.rfc-editor.org/rfc/rfc9112.html)
-[Python asyncio server creation](https://docs.python.org/3/library/asyncio-eventloop.html#creating-network-servers)
+- [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112.html)
+- [Python asyncio server creation](https://docs.python.org/3/library/asyncio-eventloop.html#creating-network-servers)
 
